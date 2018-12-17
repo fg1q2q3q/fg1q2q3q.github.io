@@ -7,7 +7,7 @@
 moaBridge = window.moaBridge || {};
 moaBridge = {
     //预览
-    preview: function({url,fileName,uid,appid}){
+    preview: function(url,fileName,uid,appid){
         if(is_android()){
             window.jsBridge.preview(url,fileName,uid,appid);
         }
@@ -23,7 +23,7 @@ moaBridge = {
         }
     },
     //下载
-    download: function({url,fileName,uid,appid}){
+    download: function(url,fileName,uid,appid){
         if(is_android()){
             window.jsBridge.download(url,fileName,uid,appid);
         }
